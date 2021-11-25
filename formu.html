@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>FORMULARIO DE REGISTRO</title>
+      <link rel="shortcut icon" href="ico1.png" type="">
+      <link rel="stylesheet" href="style.css">
+      
+      <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Inicio</a></li>
+               </ul>
+            </nav>
+            <h4>EMPRESA</h4>
+         </header>
+         <div class="progress-bar">
+            <div class="step">
+               <p>
+                  Nombre
+               </p>
+               <div class="bullet">
+                  <span>1</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Contacto
+               </p>
+               <div class="bullet">
+                  <span>2</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Opciones
+               </p>
+               <div class="bullet">
+                  <span>3</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Enviar  
+               </p>
+               <div class="bullet">
+                  <span>4</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+         </div>
+         <div class="form-outer">
+            <form action="#">
+               <div class="page slide-page">
+                  <div class="title">
+                     Informacion básica:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Nombres
+                     </div>
+                     <input type="text" name="nom" placeholder="escribe tu nombre">
+                     
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Apellidos
+                     </div>
+                     <input type="text"  name="nom" placeholder="escribe tu apellido">
+                     
+                  </div>
+                  <div class="field">
+                     <button class="firstNext next">Siguiente</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Contactos:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Correo electrónico 
+                     </div>
+                     <input type="email" name="correo" placeholder="escribe tu correo">
+                    
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Teléfono 
+                     </div>
+                     <input type="number"  placeholder="+591 67373884">
+                  </div>
+
+                  <div class="field btns">
+                     <button class="prev-1 prev">Volver</button>
+                     <button class="next-1 next">Siguiente</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Proyectos:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Pais
+                     </div>
+                     <select id="proye" name="proyectos" required>
+                        <option value="0">Selecionar...</option>
+                        <option value="1">Bolivia</option>
+                        <option value="2">Argentina</option>
+                        <option value="3">Brasil</option>
+                        <option value="4">Chile</option>
+                        <option value="5">Paraguay</option>
+                        <option value="6">Venezuela</option>
+                        <option value="7">Colombia</option>
+                        <input type="button" onclick="validar();" value="validar">
+                     </select>
+                  </div>
+                  
+                  <div class="field">
+                     <div class="label">
+                        Tipo de proyecto
+                     </div>
+                     <select id="proye" name="proyectos" required>
+                        <option value="0">Selecionar...</option>
+                        <option value="1">Proyecto 1</option>
+                        <option value="2">Proyecto 2</option>
+                        <option value="3">Proyecto 3</option>
+                        <option value="4">Proyecto 4</option>
+                        <option value="5">Proyecto 5</option>
+                        <option value="6">Proyecto 6</option>
+                        <input type="button" onclick="validar();" value="validar">
+                     </select>
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-2 prev">Volver</button>
+                     <button class="next-2 next">Siguiente</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Fecha y comentarios:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Fecha
+                     </div>
+                     <input type="date" name="fecha" min="2021-10-01">
+                     
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Comentarios
+                     </div>
+                     <input type="text">
+                     
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-3 prev">Volver</button>
+                     <button class="submit">Enviar</button>
+                  </div>
+               </div>
+
+            </form>
+         </div>
+      </div>
+          
+      <script src="JS/script.js"></script>
+
+   </body>
+</html>
